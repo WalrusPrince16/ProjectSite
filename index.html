@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flexbox & Media</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+<body>
+
+  <header>
+
+    <div class="container">
+      <nav>
+        <div>
+          <img src="data:image/png;base64,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">
+        </div>
+        <div>
+          <ul class="dt">
+            <li><a href="https://www.bungie.net/en/Explore/Detail/News/47738" target="_blank">Destiny 2</a></li>
+            <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=newssearch&cd=1&cad=rja&uact=8&ved=0ahUKEwiD8oW1vsbhAhXlw1kKHbHNBiUQqQIIKSgAMAA&url=https%3A%2F%2Fwww.gamespot.com%2Fvideos%2Frainbow-six-siege-gets-limited-time-event-gs-news-%2F2300-6449022%2F&usg=AOvVaw1aExVVG57QIULSxd3Ct483" target="_blank">Rainbow Six Seige</a></li>
+            <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=newssearch&cd=1&cad=rja&uact=8&ved=0ahUKEwjQteC9vsbhAhUluVkKHZ5CDa8QqQIIKSgAMAA&url=https%3A%2F%2Fwww.pcgamer.com%2Fborderlands-3-secret-message-hints-at-the-return-of-the-destroyer%2F&usg=AOvVaw2ttsGx0kJLriZF_SDX51s0" target="_blank">Borderlands 3</a></li>
+          </ul>
+          <ul class="mobile">
+            <li><a href="https://www.bungie.net/en/Explore/Detail/News/47738" target="_blank">D2</a></li>
+            <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=newssearch&cd=1&cad=rja&uact=8&ved=0ahUKEwiD8oW1vsbhAhXlw1kKHbHNBiUQqQIIKSgAMAA&url=https%3A%2F%2Fwww.gamespot.com%2Fvideos%2Frainbow-six-siege-gets-limited-time-event-gs-news-%2F2300-6449022%2F&usg=AOvVaw1aExVVG57QIULSxd3Ct483" target="_blank">RS6</a></li>
+            <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=newssearch&cd=1&cad=rja&uact=8&ved=0ahUKEwjQteC9vsbhAhUluVkKHZ5CDa8QqQIIKSgAMAA&url=https%3A%2F%2Fwww.pcgamer.com%2Fborderlands-3-secret-message-hints-at-the-return-of-the-destroyer%2F&usg=AOvVaw2ttsGx0kJLriZF_SDX51s0" target="_blank">BL3</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="flex dt">
+        <div class="main">
+          <span><em>Links to the Latest News</em></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container heading">
+    <h1>THIS WEEK</h1>
+  </div>
+
+  <div class="sections container">
+
+    <div class="games">
+
+      <div class="game">
+        <h1 class="dt">Destiny 2</h1>
+        <h1 class="mobile">D2</h1>
+        <p>
+          This week, Bungie buffed every Arc Subclasse in the game.
+          Notable changes include a massive damage buff to the Stormcaller,
+          as well as the return of the Thunderlord exotic quest...
+          <span>
+            <a href=""> Read more...</a>
+          </span>
+        </p>
+      </div>
+
+      <div id="seige" class="game">
+        <h1 class="dt">Rainbow Six Seige</h1>
+        <h1 class="mobile">RS6</h1>
+        <p>
+          Tachanka was updated to carry a sledgehammer becuase epic. This change
+          comes on the heels of the game's Gay Pride update which turned all of
+          its players gay...
+          <span>
+            <a href=""> Read more...</a>
+          </span>
+        </p>
+      </div>
+
+      <div id="bl3" class="game">
+        <h1 class="dt">Borderlands 3</h1>
+        <h1 class="mobile">BL3</h1>
+        <p>
+          Better than the last game... that does'nt mean much.
+          <span>
+            <a href=""> Read more...</a>
+          </span>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+  <footer class="flex container">
+    <h3 class="dt">Copyright WP Productions 2019</h3>
+    <h3 class="mobile">&copy;WP Productions 2019</h3>
+  </footer>
+</body>
+</html>
