@@ -130,7 +130,7 @@ footer h3 {
   margin-left: 2rem;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 1014px) {
   .container {
     width: 100%;
   }
