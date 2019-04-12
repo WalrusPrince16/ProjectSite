@@ -6,7 +6,7 @@
 }
 html {
   font-size: 18px;
-  background-color: lightyellow;
+  background-color: #100e1e;
   font-family: "Helvetica", sans-serif;
 }
 
@@ -40,15 +40,16 @@ nav img {
   width: auto;
   display: block;
 }
+
 ul li {
   display: inline;
   margin-right: 1rem;
 }
 li a {
+  font-size: 1.1rem;
   text-decoration: none;
   color: white;
 }
-
 a:hover {
   color: gold;
 }
@@ -76,12 +77,15 @@ header .flex {
 /* Holds the nav bar and the text box */
 
 header {
-  height: 20rem;
+  height: 25rem;
+  width: 100%;
+  margin: auto;
+  background-image: url("./images/banner.jp2");
   padding-top: 1rem;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeigokEfBIK7Z8iU0hKivORxm6KS-yGe1_W0g9q1jvkTEKiCaG");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-bottom: 1px solid white;
 }
 
 /* Games section */
@@ -96,13 +100,12 @@ header {
 
 .game h1 {
   font-size: 1.5rem;
-  margin-bottom: .5rem;
+  margin-bottom: .25rem;
   padding: .5rem;
   text-align: center;
   background-color: black;
   color: white;
 }
-
 .games {
   display: flex;
   justify-content: center;
@@ -111,22 +114,30 @@ header {
   display: flex;
   flex-direction: column;
   width: 28%;
-  margin: 2.5%;
+  margin: 0 2.5%;
   margin-bottom: 3rem;
-  background-color: white;
-  border: 1px solid black;
+  background-color: #686770;
+  color: white;
+  border: 1px solid white;
   opacity: 0.8;
   height: auto;
 }
 .game img {
-  margin: auto;
-  width: 80%;
+  margin: .25rem auto;
+  margin-bottom: .5rem;
+  width: 90%;
   height: auto;
   display: block;
-  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.game h2 {
+  margin-left: 1rem;
+  text-align: left;
+  margin-bottom: .5rem;
 }
 .game p {
-  margin: auto;
+  margin: 0 auto;
   padding: 1rem;
   padding-top: 0;
 }
@@ -162,14 +173,22 @@ footer h3 {
     margin-top: 0;
   }
   .game {
-    width: 80%;
+    width: 85%;
+  }
+  .game img {
+    width: 90%;
+  }
+  .game p {
+    font-size: 1.1rem;
   }
   .games {
     flex-direction: column;
     align-items: center;
   }
-  footer {
-    font-size: 0.7rem;
+  footer h3.mobile {
+    width: 100%;
+    margin: auto;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -191,3 +210,9 @@ footer h3 {
     margin: 9rem auto;
     width: 80%;
   }
+  footer h3.mobile {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+}
