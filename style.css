@@ -49,6 +49,10 @@ li a {
   color: white;
 }
 
+a:hover {
+  color: gold;
+}
+
 /* Textbox Section */
 
 header .flex {
