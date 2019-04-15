@@ -3,12 +3,13 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
+
 html {
   font-size: 18px;
   background-color: #120e1e;
-  font-family: "Helvetica", sans-serif;
-  box-sizing: border-box;
+  font-family: "myFirstFont", sans-serif;
 }
 
 /* Site container & general rules */
@@ -36,6 +37,7 @@ nav {
   align-items: center;
   display: flex;
 }
+
 nav img {
   height: 1.5rem;
   width: auto;
@@ -46,6 +48,7 @@ ul li {
   display: inline;
   margin-right: 1rem;
 }
+
 li a {
   font-size: 1.1rem;
   text-decoration: none;
@@ -53,6 +56,7 @@ li a {
   transition-property: color;
   transition-duration: .3s;
 }
+
 li a:hover {
   color: gold;
 }
@@ -160,11 +164,13 @@ header {
 .videos {
   background-color: #686770;
   color: white;
-  width: 85%;
+  width: 55%;
   padding: 1rem;
   opacity: 0.8;
   flex-direction: column;
+  align-items: center;
   border: 1px solid white;
+  overflow: hidden;
 }
 
 .topVideoBox {
@@ -173,7 +179,8 @@ header {
 
 .videoBoxes {
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  width: 60%;
 }
 
 .topVideoBox, .videoBox {
@@ -193,6 +200,7 @@ header {
 
 .videos img {
   height: 100%;
+  margin: 0 3rem;
   width: auto;
   display: block;
   border: 1px solid black;
@@ -236,7 +244,7 @@ footer h3 {
     margin-top: 0;
   }
   .game {
-    width: 85%;
+    width: 100%;
     margin-bottom: 1rem;
   }
   .game img {
@@ -250,21 +258,17 @@ footer h3 {
     align-items: center;
   }
 
+  .topVideoBox, .videoBoxes, .videos {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
   footer h3.mobile {
     width: 100%;
     margin: auto;
     text-align: center;
   }
-
-  .videos {
-    flex-direction: column;
-    align-items: center;
-    max-width: 90%;
-  }
-  .videoBoxes {
-    flex-direction: column;
-  }
-
 }
 
 /* Tablet Page */
@@ -278,7 +282,7 @@ footer h3 {
     width: 100%;
   }
   .game {
-    width: 70%;
+    width: 90%;
     margin-bottom: 2rem;
   }
   .games {
@@ -290,13 +294,10 @@ footer h3 {
     width: 80%;
   }
 
-  .videos {
+  .topVideoBox, .videoBoxes, .videos {
+    width: 90%;
     flex-direction: column;
     align-items: center;
-    max-width: 90%;
-  }
-  .videoBoxes {
-    flex-direction: column;
   }
 
   footer h3.mobile {
